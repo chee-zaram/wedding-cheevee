@@ -122,6 +122,30 @@ section h2 {
 .detail-box h3 {
   margin-top: 0;
 }
+
+.virtual-invite {
+  margin-top: 15px;
+  font-size: 0.85em; /* Slightly smaller text */
+  color: #666;
+  line-height: 1.5;
+}
+
+.zoom-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.zoom-icon {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoom-icon:hover {
+  transform: scale(1.1);
+}
+
 .map-container {
   border-radius: 8px;
   overflow: hidden;
