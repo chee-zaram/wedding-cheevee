@@ -47,13 +47,18 @@ h3 {
 }
 
 .hero-content .script-font {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 0 10px;
 }
 
 .hero-content p {
   font-size: 1rem;
-  margin: 10px 0;
+  margin: 0px 0;
+}
+
+.hero-content .villages {
+  font-size: 0.8rem;
+  margin: 0px 0;
 }
 
 .hero-content .date {
@@ -137,10 +142,13 @@ section h2 {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
+
 .menu-items span {
-  color: #4a90e2; /* Accent color */
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+  color: #3d423a; /* Accent color */
 }
 
 /* Gallery Section */
