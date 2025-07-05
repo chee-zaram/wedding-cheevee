@@ -125,7 +125,7 @@ section h2 {
 
 .virtual-invite {
   margin-top: 15px;
-  font-size: 0.85em; /* Slightly smaller text */
+  font-size: 0.85em;
   color: #666;
   line-height: 1.5;
 }
@@ -146,6 +146,28 @@ section h2 {
   transform: scale(1.1);
 }
 
+.add-to-calendar-button {
+  display: inline-block;
+  background-color: #4285f4; /* Google blue */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95em;
+  margin-top: 20px; /* Space above the button */
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-calendar-button:hover {
+  background-color: #357ae8; /* Darker blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .map-container {
   border-radius: 8px;
   overflow: hidden;
@@ -155,6 +177,29 @@ section h2 {
   font-size: 0.8rem;
   margin-top: 10px;
   color: #777;
+}
+
+.button-link {
+  display: inline-block;
+  /* background-color: #007bff; */
+  background-color: #3d423a;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 20px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 }
 
 /* Menu Section */
@@ -191,6 +236,184 @@ section h2 {
 }
 .photo-gallery img:hover {
   transform: scale(1.05);
+}
+
+/* Travel section */
+
+.travel-section {
+  padding: 60px 20px;
+  background-color: #e9f5ff;
+  text-align: center;
+}
+
+.travel-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.travel-category {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  text-align: left;
+  border: 1px solid #d0e9ff;
+}
+
+.travel-category h3 {
+  color: #0056b3;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.travel-mode {
+  margin-bottom: 40px;
+}
+
+.travel-mode h4 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+}
+
+.travel-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.travel-card {
+  background-color: #f0f8ff;
+  border: 1px solid #cce0ff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.travel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-color: #007bff;
+}
+
+.travel-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #aaddff;
+}
+
+.travel-icon {
+  font-size: 2.2em;
+  line-height: 1;
+}
+
+.travel-route {
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 1.25em;
+  margin: 0;
+  text-decoration: none;
+}
+
+.travel-company {
+  font-style: normal;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.travel-price {
+  font-weight: bold;
+  color: #e63946;
+  font-size: 1.4em;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px dashed #aaddff;
+  text-decoration: none;
+}
+
+.travel-note {
+  font-size: 0.95em;
+  color: #777;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.hotel-options {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  text-align: left;
+  border: 1px solid #d0e9ff;
+}
+
+.hotel-options h3 {
+  color: #0056b3;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hotel-options p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.hotel-options a {
+  color: #3d423a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hotel-options a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .travel-category {
+    padding: 30px;
+  }
+  .travel-category h3 {
+    font-size: 1.8em;
+  }
+  .travel-mode h4 {
+    font-size: 1.4em;
+  }
+  .travel-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Footer */
