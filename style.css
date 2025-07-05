@@ -400,6 +400,31 @@ section h2 {
   text-decoration: underline;
 }
 
+.back-to-home {
+  text-align: left;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light background matching travel section */
+  border-bottom: 1px solid #cce0ff;
+}
+
+.back-to-home a {
+  display: inline-flex; /* Allows icon and text to align */
+  align-items: center;
+  gap: 8px; /* Space between arrow and text */
+  text-decoration: none;
+  color: #007bff; /* Blue color for the link */
+  font-weight: bold;
+  font-size: 1.1em;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.back-to-home a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  transform: translateX(-5px); /* Slight slide effect to the left */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .travel-category {
