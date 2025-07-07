@@ -26,11 +26,10 @@ h3 {
 
 /* Hero Section */
 .hero-section {
-  background-image: linear-gradient(
-      rgba(253, 253, 248, 0.7),
-      rgba(253, 253, 248, 0.9)
-    ),
-    url("https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?q=80&w=2560&auto=format&fit=crop");
+  background-image:
+    linear-gradient(rgba(253, 253, 248, 0.7), rgba(253, 253, 248, 0.9)),
+    /* url("https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?q=80&w=2560&auto=format&fit=crop"); */
+      url("./images/_OLA7578.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
