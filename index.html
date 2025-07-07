@@ -161,6 +161,29 @@
         </div>
       </section>
 
+      <section class="donations-section" id="donations" data-aos="fade-up">
+        <h2>Your Well Wishes & Gifts</h2>
+        <div class="donations-container">
+          <div class="donation-info">
+            <p>
+              If you'd like to share your well wishes by blessing us with a
+              gift, we are incredibly grateful!
+            </p>
+          </div>
+          <div class="donation-info">
+            <p><strong>(₦) Wema Bank</strong></p>
+            <p>
+              <strong>Flutterwave/PAYOUTSUB Emmanuel Chee-Zaram Okeke</strong>
+            </p>
+            <p
+              id="account-number"
+              class="account-number-obfuscated"
+              data-obf="8543742246"
+            ></p>
+          </div>
+        </div>
+      </section>
+
       <section class="gallery-section" id="gallery">
         <h2 data-aos="fade-up">Our Moments</h2>
         <div class="photo-gallery" data-aos="fade-up" data-aos-delay="200">
@@ -230,6 +253,26 @@
       AOS.init({
         duration: 800, // animation duration in milliseconds
         once: false, // whether animation should happen only once
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const accountNumberElement = document.getElementById("account-number");
+
+        if (accountNumberElement) {
+          accountNumberElement.addEventListener("click", () => {
+            const obfuscatedAccountNumber =
+              accountNumberElement.getAttribute("data-obf");
+            if (obfuscatedAccountNumber) {
+              accountNumberElement.textContent = obfuscatedAccountNumber;
+              accountNumberElement.innerHTML = `<a href="tel:${obfuscatedAccountNumber}">${obfuscatedAccountNumber}</a>`;
+              accountNumberElement.classList.remove(
+                "account-number-obfuscated",
+              );
+            }
+          });
+          accountNumberElement.textContent =
+            "Click here to reveal account number";
+        }
       });
     </script>
   </body>
